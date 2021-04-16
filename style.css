@@ -1,0 +1,107 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    background-color: darkmagenta;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.container h2 {
+
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.DatiUtente,.biglietto {
+
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.DatiUtente form {
+
+    padding: 20px 0;
+    
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.DatiUtente .imput_container {
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.DatiUtente .imput_container button {
+
+    padding: 0 10px;
+    margin: 10px;
+    color: darkmagenta;
+}
+
+.biglietto h5 {
+
+    color: black;
+    text-align: left;
+}
+
+.biglietto_container {
+
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+}
+
+.biglietto_container::after{
+
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.biglietto_container_nome {
+
+ background-color: grey;
+}
+
+.biglietto_container_nome,.biglietto_container_offerta,.biglietto_container_carrozza,
+.biglietto_container_CP,.biglietto_container_costo {
+
+    float: left;
+    width: 20%;
+    height: 100px;
+    
+
+}
+
+.info_biglietto_top,.info_biglietto_bottom{
+
+    padding: 10px 0 ;
+}
+
+.info_biglietto_top h5{
+
+    text-align: center;
+}
