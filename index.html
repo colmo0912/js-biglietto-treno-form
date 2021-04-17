@@ -11,72 +11,73 @@
 
     <div class="container">
 
-        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <h2 id="ciao">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
         <div class="DatiUtente">
 
-            
-
-                
                     <form action="" id="formUtente">
                         <input type="text" id="nome" name="nome" placeholder="Nome Cognome">
                         <input type="text" id="kmViaggio" name="kmViaggio" placeholder="KM da percorrere">
-                        <input type="text" id="eta" name="eta" placeholder="ETà">
+                        <select id="selezionaEta" name="selezionaEta">
+                            <option id="maggiorenne" value="maggiorenne" name="maggiorenne">maggiorenne</option>
+                            <option id="minorenne" value="minorenne" name="minorenne">minorenne</option>  
+                            <option id="over" value="over" name="over">Over 65</option> 
+                        </select>
+                        
                         <div class="imput_container">   
-                            <button>GENERA</button>
-                            <button>ANNULLA</button>
+                            <button type="submit" id="btn_genera">GENERA</button>
+                            <button type="reset" id="btn_annulla">ANNULLA</button>
                         </div>
+                    
                     </form>
-
-                
-
-                
-            
-                
-
         </div>
 
-        <h2>IL TUO BIGLIETTO</h2>
+        
+       
 
-        <div class="biglietto">
+        <div id="biglietto" class="hiddenTicket"><h2>IL TUO BIGLIETTO</h2>
 
-            <h5>DETTAGLIO PASSEGGERI</h5>
+            <div class="biglietto">
 
-            <div class="biglietto_container">
+            
+                <h5>DETTAGLIO PASSEGGERI</h5>
 
-                
-                <div class="biglietto_container_nome">
-                    <div class="info_biglietto_top">
-                        <h5>NOME PASSEGGERO</h5>
+                <div class="biglietto_container">
+
+                    
+                    <div class="biglietto_container_nome">
+                        <div class="info_biglietto_top">
+                            <h5 id="nomePasseggero">NOME PASSEGGERO</h5>
+                        </div>
+                        <div class="info_biglietto_bottom"></div>
                     </div>
-                    <div class="info_biglietto_bottom"></div>
-                </div>
-                <div class="biglietto_container_offerta">
-                    <div class="info_biglietto_top">
-                        <h5>OFFERTA</h5>
+                    <div class="biglietto_container_offerta">
+                        <div class="info_biglietto_top">
+                            <h5>OFFERTA <p id="offerta"></p></h5>
+                        </div>
+                        <div class="info_biglietto_bottom"></div>
                     </div>
-                    <div class="info_biglietto_bottom"></div>
-                </div>
-                <div class="biglietto_container_carrozza">
-                    <div class="info_biglietto_top">
-                        <h5>CARROZZA</h5>
+                    <div class="biglietto_container_carrozza">
+                        <div class="info_biglietto_top">
+                            <h5 >CARROZZA <p id="carrozza"></p></h5>
+                        </div>
+                        <div class="info_biglietto_bottom"></div>
                     </div>
-                    <div class="info_biglietto_bottom"></div>
-                </div>
-                <div class="biglietto_container_CP">
-                    <div class="info_biglietto_top">
-                        <h5>CODICE CP</h5>
+                    <div class="biglietto_container_CP">
+                        <div class="info_biglietto_top">
+                            <h5>CODICE CP <p id="codiceCP"></p></h5>
+                        </div>
+                        <div class="info_biglietto_bottom"></div>
                     </div>
-                    <div class="info_biglietto_bottom"></div>
-                </div>
-                <div class="biglietto_container_costo">
-                    <div class="info_biglietto_top">
-                        <h5>COSTO BIGLIETTO</h5>
+                    <div class="biglietto_container_costo">
+                        <div class="info_biglietto_top">
+                            <h5> COSTO BIGLIETTO <p id="costoBiglietto"></p></h5>
+                        </div>
+                        <div class="info_biglietto_bottom"></div>
                     </div>
-                    <div class="info_biglietto_bottom"></div>
                 </div>
             </div>
-
+        </div>
 
     </div>
     
