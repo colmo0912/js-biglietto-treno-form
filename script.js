@@ -101,6 +101,21 @@ formUtente.addEventListener("reset",function(event){
 }
 )
 
+var btnGenera = document.getElementById("btn_genera");
+btnGenera.addEventListener("click" , function(){
+
+    btnGenera.style.backgroundColor = "#6355af";
+    btnGenera.style.color = "white";
+} )
+
+
+var btn_annulla = document.getElementById("btn_annulla");
+btn_annulla.addEventListener("click" , function(){
+
+    btn_annulla.style.backgroundColor = "#6355af";
+    btn_annulla.style.color = "white";
+} )
+
 
 
 
